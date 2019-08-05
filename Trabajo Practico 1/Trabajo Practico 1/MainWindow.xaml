@@ -1,0 +1,46 @@
+﻿<Window x:Class="Trabajo_Practico_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trabajo_Practico_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="709.756" Width="1084.146">
+    <Grid ForceCursor="True" Width="1074" HorizontalAlignment="Left" Margin="0,0,0,-1">
+        <Grid.ContextMenu>
+            <ContextMenu/>
+        </Grid.ContextMenu>
+        <Button Content="CALCULAR" HorizontalAlignment="Left" Margin="154,511,0,0" VerticalAlignment="Top" Width="166" Height="65"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="FUNCION:" HorizontalAlignment="Left" Margin="67,186,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="N° ITERACIONES (MAX 100):" HorizontalAlignment="Left" Margin="69,239,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label Content="TOLERANCIA:" HorizontalAlignment="Left" Margin="67,293,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="PARAMETRO 1 (IZQUIERDO):" HorizontalAlignment="Left" Margin="67,344,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.554,-0.023" FontSize="14" FontWeight="Bold"/>
+        <Label Content="PARAMETRO 2 (DERECHO):" HorizontalAlignment="Left" Margin="67,397,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="317,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CALCULO DE RAIZ (METODO DE BISECCION)" HorizontalAlignment="Left" Margin="267,23,0,0" VerticalAlignment="Top" Height="40" Width="467" FontSize="22" FontWeight="Bold"/>
+        <Label Content="N° DE ITERACIONES TOTALES" HorizontalAlignment="Left" Margin="606,186,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="SOLUCION:" HorizontalAlignment="Left" Margin="606,238,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="ERROR RELATIVO:" HorizontalAlignment="Left" Margin="606,290,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="DATOS DE ENTRADA:" HorizontalAlignment="Left" Margin="155,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.547,-0.094" Height="35" Width="199" FontSize="16" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.345"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="DATOS DE SALIDA:" HorizontalAlignment="Left" Margin="723,112,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="919,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="919,240,0,0" VerticalAlignment="Top"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="919,293,0,0" VerticalAlignment="Top"/>
+        <Button Content="SALIR" HorizontalAlignment="Left" Margin="723,462,0,0" VerticalAlignment="Top" Width="131" Height="65"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="512" Margin="23,89,0,0" VerticalAlignment="Top" Width="439"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="271" Margin="587,89,0,0" VerticalAlignment="Top" Width="432"/>
+    </Grid>
+</Window>

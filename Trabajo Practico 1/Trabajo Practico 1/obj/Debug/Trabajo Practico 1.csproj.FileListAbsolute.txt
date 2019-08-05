@@ -1,0 +1,15 @@
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\bin\Debug\Trabajo Practico 1.exe.config
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\bin\Debug\Trabajo Practico 1.exe
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\bin\Debug\Trabajo Practico 1.pdb
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\MainWindow.g.cs
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\App.g.cs
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1_MarkupCompile.cache
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1_MarkupCompile.lref
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\MainWindow.baml
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.g.resources
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo_Practico_1.Properties.Resources.resources
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.exe
+C:\Users\diego\Desktop\TP1 Analisis\Trabajo Practico 1\Trabajo Practico 1\obj\Debug\Trabajo Practico 1.pdb
