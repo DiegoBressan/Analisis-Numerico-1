@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lógica
 {
-    public class Class1
+    public class MetodoAbierto
     {
+        public double Limite { get; set; }
     }
 }
