@@ -10,43 +10,72 @@ namespace Lógica
     {
         public double ObtenerFuncion(double Limite)
         {
+            // Calcula el f(limite) pedido
             double Euler = 2.71828182845;
             double resultadoo = ((System.Math.Pow(Limite,5)) * (System.Math.Pow(Euler, Limite)) - 10);
             return resultadoo;
         }
 
-        public Resultado ObtenerRaizBiseccion()
+        public Resultado ObtenerRaizBiseccion(Datos dato, MetodoCerrado metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
 
-            
+            int Cont = 0;
+
+            do
+            {
+
+
+
+            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
 
             return ResultadoRetorno;
         }
 
-        public Resultado ObtenerRaizReglaFalsa()
+        public Resultado ObtenerRaizReglaFalsa(Datos dato, MetodoCerrado metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
 
+            int Cont = 0;
 
+            do
+            {
+
+
+
+            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
 
             return ResultadoRetorno;
         }
 
-        public Resultado ObtenerRaizNewtonRaphson()
+        public Resultado ObtenerRaizNewtonRaphson(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
 
+            int Cont = 0;
 
+            do
+            {
+
+
+
+            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
 
             return ResultadoRetorno;
         }
 
-        public Resultado ObtenerRaizSecante()
+        public Resultado ObtenerRaizSecante(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
 
-            
+            int Cont = 0;
+
+            do
+            {
+
+
+
+            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
 
             return ResultadoRetorno;
         }
