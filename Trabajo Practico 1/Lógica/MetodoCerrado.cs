@@ -10,5 +10,15 @@ namespace Lógica
     {
         public double LimiteIzquierdo { get; set; }
         public double LimiteDerecho { get; set; }
+
+        public MetodoCerrado(double li, double ld)
+        {
+            this.LimiteIzquierdo = li;
+            this.LimiteDerecho = ld;
+        }
+        public MetodoCerrado()
+        {
+
+        }
     }
 }

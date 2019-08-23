@@ -63,6 +63,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioPrincipal.cs" />
     <Compile Include="MetodoBiseccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lógica\Lógica.csproj">
+      <Project>{1427e60a-6715-472e-8a39-3bf40956139c}</Project>
+      <Name>Lógica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
