@@ -136,9 +136,10 @@ namespace Lógica
 
                 do
                 {
-                    Xr = (metodo.LimiteIzquierdo + metodo.LimiteDerecho) / 2;
                     Cont += 1;
-                    ResultadoRetorno.ErrorRelativo = ((ObtenerFuncion(metodo.LimiteIzquierdo)* metodo.LimiteDerecho)-(ObtenerFuncion(metodo.LimiteDerecho) * metodo.LimiteIzquierdo)) / (ObtenerFuncion(metodo.LimiteIzquierdo) - ObtenerFuncion(metodo.LimiteDerecho));
+                    Xr = ((ObtenerFuncion(metodo.LimiteIzquierdo)* metodo.LimiteDerecho)-(ObtenerFuncion(metodo.LimiteDerecho) * metodo.LimiteIzquierdo)) / (ObtenerFuncion(metodo.LimiteIzquierdo) - ObtenerFuncion(metodo.LimiteDerecho));
+                    ResultadoRetorno.ErrorRelativo = (Xr - Ant) / Xr;
+
                     if (ResultadoRetorno.ErrorRelativo < 0)
                     {
                         ResultadoRetorno.ErrorRelativo = ResultadoRetorno.ErrorRelativo * -1;
@@ -171,31 +172,104 @@ namespace Lógica
         public Resultado ObtenerRaizNewtonRaphson(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            
+            bool ban = false;
 
-            int Cont = 0;
-
-            do
+            if (ObtenerFuncion(metodo.Limite) == 0)
             {
+                ResultadoRetorno.Raiz = metodo.Limite;
+            }
+            else
+            {
+                ban = true;
+            }
 
+            if (ban == true)
+            {
+                bool band = false;
+                double Ant = 0;
+                int Cont = 0;
+                double Deriv = 0;
+                double Xr = 0;
 
+                do
+                {
+                    Cont += 1;
+                    Deriv = (ObtenerFuncion(metodo.Limite + 0.0001) - (ObtenerFuncion(metodo.Limite) / (0.0001)));
+                    Xr = (metodo.Limite - ObtenerFuncion(metodo.Limite)) / Deriv;
+                    ResultadoRetorno.ErrorRelativo = (Xr - Ant) / Xr;
 
-            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
+                    if (ResultadoRetorno.ErrorRelativo < 0)
+                    {
+                        ResultadoRetorno.ErrorRelativo = ResultadoRetorno.ErrorRelativo * -1;
+                    }
 
+                    if (ObtenerFuncion(Xr) == 0)
+                    {
+                        ResultadoRetorno.Raiz = Xr;
+                        ResultadoRetorno.Iteraciones = Cont;
+                        band = true;
+                    }
+                    else
+                    {
+                        metodo.Limite = Xr;
+                        Ant = Xr;
+                    }
+
+                } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
+            }
             return ResultadoRetorno;
         }
 
         public Resultado ObtenerRaizSecante(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            
+            bool ban = false;
 
-            int Cont = 0;
-
-            do
+            if (ObtenerFuncion(metodo.Limite) == 0)
             {
+                ResultadoRetorno.Raiz = metodo.Limite;
+            }
+            else
+            {
+                ban = true;
+            }
 
+            if (ban == true)
+            {
+                bool band = false;
+                double Ant = 0;
+                int Cont = 0;
+                double Deriv = 0;
+                double Xr = 0;
 
+                do
+                {
+                    Cont += 1;
+                    Deriv = ((ObtenerFuncion(metodo.Limite + 1) * metodo.Limite) - ((ObtenerFuncion(metodo.Limite) * (metodo.Limite + 1))));
+                    Xr = Deriv / ((ObtenerFuncion(metodo.Limite + 1) - ObtenerFuncion(metodo.Limite)));
+                    ResultadoRetorno.ErrorRelativo = (Xr - Ant) / Xr;
 
-            } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && ResultadoRetorno.Raiz != 0);
+                    if (ResultadoRetorno.ErrorRelativo < 0)
+                    {
+                        ResultadoRetorno.ErrorRelativo = ResultadoRetorno.ErrorRelativo * -1;
+                    }
+
+                    if (ObtenerFuncion(Xr) == 0)
+                    {
+                        ResultadoRetorno.Raiz = Xr;
+                        ResultadoRetorno.Iteraciones = Cont;
+                        band = true;
+                    }
+                    else
+                    {
+                        metodo.Limite = Xr;
+                        Ant = Xr;
+                    }
+
+                } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
+            }
 
             return ResultadoRetorno;
         }
