@@ -62,6 +62,7 @@ namespace Logica
                 { 
                     Xr = (metodo.LimiteIzquierdo + metodo.LimiteDerecho) / 2;
                     Cont += 1;
+                    ResultadoRetorno.ErrorRelativo = 0;
                     ResultadoRetorno.ErrorRelativo = (Xr - Ant) / Xr;
                     if (ResultadoRetorno.ErrorRelativo< 0)
                     {
@@ -86,7 +87,14 @@ namespace Logica
                         Ant = Xr;
                     }
 
+                    ResultadoRetorno.Iteraciones = Cont;
+
                 } while (Cont<dato.Iteraciones && dato.Tolerancia<ResultadoRetorno.ErrorRelativo && band == false);
+
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                {
+                    ResultadoRetorno.Raiz = Xr;
+                }
             }
 
             return ResultadoRetorno;
@@ -162,8 +170,14 @@ namespace Logica
                         }
                         Ant = Xr;
                     }
+                    ResultadoRetorno.Iteraciones = Cont;
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
+
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                {
+                    ResultadoRetorno.Raiz = Xr;
+                }
             }
 
             return ResultadoRetorno;
@@ -215,8 +229,14 @@ namespace Logica
                         metodo.Limite = Xr;
                         Ant = Xr;
                     }
+                    ResultadoRetorno.Iteraciones = Cont;
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
+
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                {
+                    ResultadoRetorno.Raiz = Xr;
+                }
             }
 
             return ResultadoRetorno;
@@ -268,8 +288,14 @@ namespace Logica
                         metodo.Limite = Xr;
                         Ant = Xr;
                     }
+                    ResultadoRetorno.Iteraciones = Cont;
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
+
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                {
+                    ResultadoRetorno.Raiz = Xr;
+                }
             }
 
             return ResultadoRetorno;

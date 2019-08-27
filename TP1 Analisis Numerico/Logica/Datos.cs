@@ -8,11 +8,11 @@ namespace Logica
 {
     public class Datos
     {
-        public double Funcion { get; set; } //Preguntar que es
+        public string Funcion { get; set; } //Preguntar que es
         public int Iteraciones { get; set; }
         public double Tolerancia { get; set; }
 
-        public Datos(double funcion, int iter, double tole)
+        public Datos(string funcion, int iter, double tole)
         {
             this.Funcion = funcion;
             this.Iteraciones = iter;

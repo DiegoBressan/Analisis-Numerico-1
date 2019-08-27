@@ -1,6 +1,6 @@
 ﻿namespace Formulario
 {
-    partial class Regla_Falsa
+    partial class MetodoSecante
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Regla_Falsa";
+            this.Text = "Secante";
         }
 
         #endregion

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    public partial class Secante : Form
+    public partial class MetodoSecante : Form
     {
-        public Secante()
+        public MetodoSecante()
         {
             InitializeComponent();
         }

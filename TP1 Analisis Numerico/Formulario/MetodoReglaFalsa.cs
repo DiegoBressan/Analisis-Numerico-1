@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    public partial class Newton_Raphsow : Form
+    public partial class MetodoReglaFalsa : Form
     {
-        public Newton_Raphsow()
+        public MetodoReglaFalsa()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    public partial class Biseccion : Form
+    public partial class MetodoNewton_Raphsow : Form
     {
-        public Biseccion()
+        public MetodoNewton_Raphsow()
         {
             InitializeComponent();
         }

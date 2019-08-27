@@ -1,6 +1,6 @@
 ﻿namespace Formulario
 {
-    partial class Newton_Raphsow
+    partial class MetodoNewton_Raphsow
     {
         /// <summary>
         /// Required designer variable.

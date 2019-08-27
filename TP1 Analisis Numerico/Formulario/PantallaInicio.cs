@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +11,7 @@ using Logica;
 
 namespace Formulario
 {
-    public partial class PantallaInicio
+    public partial class PantallaInicio : Form, FormularioPrincipal
     {
         public Principal Principal { get; set; }
 
@@ -19,20 +22,16 @@ namespace Formulario
             InitializeComponent();
         }
         //BISECCION
-        public Resultado ObtenerRaizBiseccion(Datos dato, MetodoCerrado metodo)
+        public Resultado ObenerRaizBiseccion(Datos dato, MetodoCerrado metodo)
         {
             return Principal.ObtenerRaizBiseccion(dato, metodo);
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             MetodoBiseccion nuevo = new MetodoBiseccion(new MetodoCerrado(), new Datos());
             nuevo.Owner = this;
             nuevo.ShowDialog();
-        }
-
-        private void PantallaInicio_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
