@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Formulario
 {
-    static class Program
+    static class FormularioPrincipal
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
