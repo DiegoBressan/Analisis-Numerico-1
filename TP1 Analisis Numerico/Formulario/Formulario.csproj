@@ -82,6 +82,15 @@
     <EmbeddedResource Include="MetodoBiseccion.resx">
       <DependentUpon>MetodoBiseccion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MetodoNewton_Raphsow.resx">
+      <DependentUpon>MetodoNewton_Raphsow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodoReglaFalsa.resx">
+      <DependentUpon>MetodoReglaFalsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodoSecante.resx">
+      <DependentUpon>MetodoSecante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaInicio.resx">
       <DependentUpon>PantallaInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,6 +122,9 @@
       <Project>{340f134c-545e-44f2-a6b3-d07b285918d6}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pantallazo-8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

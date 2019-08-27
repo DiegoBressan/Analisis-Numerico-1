@@ -33,5 +33,41 @@ namespace Formulario
             nuevo.Owner = this;
             nuevo.ShowDialog();
         }
+        //REGLA FALSA
+        public Resultado ObtenerRaizReglaFalsa(Datos dato, MetodoCerrado metodo)
+        {
+            return Principal.ObtenerRaizReglaFalsa(dato, metodo);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MetodoReglaFalsa nuevo = new MetodoReglaFalsa(new MetodoCerrado(), new Datos());
+            nuevo.Owner = this;
+            nuevo.ShowDialog();
+        }
+        //NEWTON-RAPHSON
+        public Resultado ObtenerRaizNewtonRaphson(Datos dato, MetodoAbierto metodo)
+        {
+            return Principal.ObtenerRaizNewtonRaphson(dato, metodo);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MetodoNewton_Raphsow nuevo = new MetodoNewton_Raphsow(new MetodoAbierto(), new Datos());
+            nuevo.Owner = this;
+            nuevo.ShowDialog();
+        }
+        //SECANTE
+        public Resultado ObtenerRaizSecante(Datos dato, MetodoAbierto metodo)
+        {
+            return Principal.ObtenerRaizSecante(dato, metodo);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MetodoSecante nuevo = new MetodoSecante(new MetodoAbierto(), new Datos());
+            nuevo.Owner = this;
+            nuevo.ShowDialog();
+        }
     }
 }

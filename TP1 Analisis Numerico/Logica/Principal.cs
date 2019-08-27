@@ -85,17 +85,19 @@ namespace Logica
                             metodo.LimiteIzquierdo = Xr;
                         }
                         Ant = Xr;
-                    }
-
-                    ResultadoRetorno.Iteraciones = Cont;
+                    }                   
 
                 } while (Cont<dato.Iteraciones && dato.Tolerancia<ResultadoRetorno.ErrorRelativo && band == false);
 
-                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo || Cont >= dato.Iteraciones)
                 {
                     ResultadoRetorno.Raiz = Xr;
                 }
+                ResultadoRetorno.Iteraciones = Cont;
             }
+            ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
         }
@@ -170,15 +172,18 @@ namespace Logica
                         }
                         Ant = Xr;
                     }
-                    ResultadoRetorno.Iteraciones = Cont;
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
 
-                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo || Cont >= dato.Iteraciones)
                 {
                     ResultadoRetorno.Raiz = Xr;
                 }
+                ResultadoRetorno.Iteraciones = Cont;
             }
+            ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
         }
@@ -229,15 +234,18 @@ namespace Logica
                         metodo.Limite = Xr;
                         Ant = Xr;
                     }
-                    ResultadoRetorno.Iteraciones = Cont;
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
 
-                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo || Cont >= dato.Iteraciones)
                 {
                     ResultadoRetorno.Raiz = Xr;
                 }
+                ResultadoRetorno.Iteraciones = Cont;
             }
+            ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
         }
@@ -287,16 +295,19 @@ namespace Logica
                     {
                         metodo.Limite = Xr;
                         Ant = Xr;
-                    }
-                    ResultadoRetorno.Iteraciones = Cont;
+                    }                   
 
                 } while (Cont < dato.Iteraciones && dato.Tolerancia < ResultadoRetorno.ErrorRelativo && band == false);
 
-                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo)
+                if (dato.Tolerancia > ResultadoRetorno.ErrorRelativo || Cont >= dato.Iteraciones)
                 {
                     ResultadoRetorno.Raiz = Xr;
                 }
+                ResultadoRetorno.Iteraciones = Cont;
             }
+            ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
         }

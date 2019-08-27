@@ -11,5 +11,11 @@ namespace Formulario
     {
         //BISECCION
         Resultado ObenerRaizBiseccion(Datos dato, MetodoCerrado metodo);
+        //REGLA FALSA
+        Resultado ObtenerRaizReglaFalsa(Datos dato, MetodoCerrado metodo);
+        //NEWTON-RAPHSON
+        Resultado ObtenerRaizNewtonRaphson(Datos dato, MetodoAbierto metodo);
+        //SECANTE
+        Resultado ObtenerRaizSecante(Datos dato, MetodoAbierto metodo);
     }
 }

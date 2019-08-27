@@ -12,3 +12,6 @@ C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Fo
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.exe
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.pdb
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoBiseccion.resources
+C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoReglaFalsa.resources
+C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoNewton_Raphsow.resources
+C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoSecante.resources

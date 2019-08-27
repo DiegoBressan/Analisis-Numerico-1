@@ -24,6 +24,7 @@ namespace Formulario
 
         private void CompletarDatosMetodo(MetodoCerrado metodo, Datos datos)
         {
+
             this.textBox1.Text = Convert.ToString(datos.Funcion);
             this.textBox2.Text = Convert.ToString(datos.Iteraciones);
             this.textBox3.Text = Convert.ToString(datos.Iteraciones);
