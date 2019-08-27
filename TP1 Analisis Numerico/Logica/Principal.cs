@@ -11,8 +11,30 @@ namespace Logica
         public double ObtenerFuncion(double Limite)
         {
             // Calcula el f(limite) pedido
-            double Euler = 2.71828182845;
-            double resultadoo = ((System.Math.Pow(Limite, 5)) * (System.Math.Pow(Euler, Limite)) - 10);
+            double resultadoo = new double();
+
+            // Ejercicio 1
+            /*double Euler = 2.71828182845;
+            resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);*/
+
+            // Ejercicio 2
+            // resultadoo = ((Math.Log(Limite)) + (1 / Limite) - 3);
+
+            // Ejercicio 3
+            /*double AuxArriba = (12.5) * (Limite + 2);
+            double AuxAbajo = (Math.Pow(Limite, 2)) + (4 * Limite) + 5;
+            resultadoo = (AuxArriba / AuxAbajo) + 2;*/
+
+            // Ejercicio 4
+            /*double Aux = (Math.Pow(Limite, 2)) - 4;
+            if (Aux < 0)
+            {Aux = Aux * -1;}
+            resultadoo = Aux + (2 * Limite);*/
+
+            // Ejercicio 5
+            /*double Gfuncion = 5 - (Math.Sqrt(Limite));
+            double Ffuncion = (Math.Pow(Limite, 2)) - (3 * Limite) + (Math.Log(1 + Limite));*/
+
             return resultadoo;
         }
 
