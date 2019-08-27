@@ -15,3 +15,20 @@ C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Fo
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoReglaFalsa.resources
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoNewton_Raphsow.resources
 C:\Users\David\Desktop\Tp-Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoSecante.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\bin\Debug\Formulario.exe.config
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\bin\Debug\Formulario.exe
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\bin\Debug\Formulario.pdb
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\bin\Debug\Logica.dll
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\bin\Debug\Logica.pdb
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoBiseccion.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoNewton_Raphsow.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoReglaFalsa.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.MetodoSecante.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.PantallaInicio.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.Properties.Resources.resources
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.csproj.GenerateResource.cache
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.csproj.CopyComplete
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.exe
+C:\Users\diego\Desktop\Tp1 Analisis\TP1 Analisis Numerico\Formulario\obj\Debug\Formulario.pdb

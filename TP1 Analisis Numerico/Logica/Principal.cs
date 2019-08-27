@@ -14,8 +14,8 @@ namespace Logica
             double resultadoo = new double();
 
             // Ejercicio 1
-            /*double Euler = 2.71828182845;
-            resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);*/
+            double Euler = 2.71828182845;
+            resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);
 
             // Ejercicio 2
             // resultadoo = ((Math.Log(Limite)) + (1 / Limite) - 3);
@@ -33,7 +33,8 @@ namespace Logica
 
             // Ejercicio 5
             /*double Gfuncion = 5 - (Math.Sqrt(Limite));
-            double Ffuncion = (Math.Pow(Limite, 2)) - (3 * Limite) + (Math.Log(1 + Limite));*/
+            double Ffuncion = (Math.Pow(Limite, 2)) - (3 * Limite) + (Math.Log(1 + Limite));
+            resultadoo = Gfuncion - Ffuncion;*/
 
             return resultadoo;
         }
