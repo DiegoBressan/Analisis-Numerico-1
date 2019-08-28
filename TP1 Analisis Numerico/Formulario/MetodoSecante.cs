@@ -26,7 +26,7 @@ namespace Formulario
         {
             this.textBox1.Text = Convert.ToString(datos.Funcion);
             this.textBox2.Text = Convert.ToString(datos.Iteraciones);
-            this.textBox3.Text = Convert.ToString(datos.Iteraciones);
+            this.textBox3.Text = Convert.ToString(datos.Tolerancia);
             this.textBox4.Text = Convert.ToString(metodo.Limite);
         }
 

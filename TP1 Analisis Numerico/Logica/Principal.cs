@@ -14,8 +14,8 @@ namespace Logica
             double resultadoo = new double();
 
             // Ejercicio 1
-            double Euler = 2.71828182845;
-            resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);
+            //double Euler = 2.71828182845;
+            //resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);
 
             // Ejercicio 2
             // resultadoo = ((Math.Log(Limite)) + (1 / Limite) - 3);
@@ -26,10 +26,10 @@ namespace Logica
             resultadoo = (AuxArriba / AuxAbajo) + 2;*/
 
             // Ejercicio 4
-            /*double Aux = (Math.Pow(Limite, 2)) - 4;
+            double Aux = (Math.Pow(Limite, 2)) - 4;
             if (Aux < 0)
             {Aux = Aux * -1;}
-            resultadoo = Aux + (2 * Limite);*/
+            resultadoo = Aux + (2 * Limite);
 
             // Ejercicio 5
             /*double Gfuncion = 5 - (Math.Sqrt(Limite));
@@ -70,6 +70,7 @@ namespace Logica
                     else
                     {
                         //Aca se pediria los limites de nuevo
+                        ban = 3;
                     }
                 }
             }
@@ -156,6 +157,7 @@ namespace Logica
                     else
                     {
                         //Aca se pediria los limites de nuevo
+                        ban = 3;
                     }
                 }
             }
@@ -215,7 +217,7 @@ namespace Logica
         {
             Resultado ResultadoRetorno = new Resultado();
 
-            bool ban = false;
+            int ban = 0;
 
             if (ObtenerFuncion(metodo.Limite) == 0)
             {
@@ -223,10 +225,17 @@ namespace Logica
             }
             else
             {
-                ban = true;
+                if (ObtenerFuncion(metodo.Limite) < 0)
+                {
+                    ban = 1;
+                }
+                else
+                {
+                    ban = 2;
+                }
             }
 
-            if (ban == true)
+            if (ban == 1)
             {
                 bool band = false;
                 double Ant = 0;
@@ -277,7 +286,7 @@ namespace Logica
         {
             Resultado ResultadoRetorno = new Resultado();
 
-            bool ban = false;
+            int ban = 0;
 
             if (ObtenerFuncion(metodo.Limite) == 0)
             {
@@ -285,10 +294,17 @@ namespace Logica
             }
             else
             {
-                ban = true;
+                if (ObtenerFuncion(metodo.Limite) < 0)
+                {
+                    ban = 1;
+                }
+                else
+                {
+                    ban = 2;
+                }
             }
 
-            if (ban == true)
+            if (ban == 1)
             {
                 bool band = false;
                 double Ant = 0;
