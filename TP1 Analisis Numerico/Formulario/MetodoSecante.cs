@@ -54,6 +54,10 @@ namespace Formulario
                     label10.Text = Convert.ToString(NuevoResultado.Iteraciones);
                     label11.Text = Convert.ToString(NuevoResultado.ErrorRelativo);
                     label12.Text = Convert.ToString(NuevoResultado.Raiz);
+                    if (NuevoResultado.MayorACero == true)
+                    {
+                        MessageBox.Show("Ingrese un nuevo Limite, raiz no encontrada");
+                    }
                 }
             }
             else

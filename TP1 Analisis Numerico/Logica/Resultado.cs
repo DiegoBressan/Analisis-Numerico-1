@@ -11,6 +11,7 @@ namespace Logica
         public int Iteraciones { get; set; }
         public double Raiz { get; set; }
         public double ErrorRelativo { get; set; }
+        public bool MayorACero { get; set; }
 
         public Resultado(int iter, double raiz, double error)
         {

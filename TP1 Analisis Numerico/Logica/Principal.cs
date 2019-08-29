@@ -34,7 +34,7 @@ namespace Logica
             // Ejercicio 5
             /*double Gfuncion = 5 - (Math.Sqrt(Limite));
             double Ffuncion = (Math.Pow(Limite, 2)) - (3 * Limite) + (Math.Log(1 + Limite));
-            resultadoo = Gfuncion - Ffuncion;*/
+            resultadoo = Ffuncion - Gfuncion;*/
 
             return resultadoo;
         }
@@ -42,6 +42,7 @@ namespace Logica
         public Resultado ObtenerRaizBiseccion(Datos dato, MetodoCerrado metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            ResultadoRetorno.MayorACero = false;
 
             int ban = 0;
 
@@ -70,6 +71,7 @@ namespace Logica
                     else
                     {
                         //Aca se pediria los limites de nuevo
+                        ResultadoRetorno.MayorACero = true;
                         ban = 3;
                     }
                 }
@@ -129,6 +131,7 @@ namespace Logica
         public Resultado ObtenerRaizReglaFalsa(Datos dato, MetodoCerrado metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            ResultadoRetorno.MayorACero = false;
 
             int ban = 0;
 
@@ -157,6 +160,7 @@ namespace Logica
                     else
                     {
                         //Aca se pediria los limites de nuevo
+                        ResultadoRetorno.MayorACero = true;
                         ban = 3;
                     }
                 }
@@ -216,6 +220,7 @@ namespace Logica
         public Resultado ObtenerRaizNewtonRaphson(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            ResultadoRetorno.MayorACero = false;
 
             int ban = 0;
 
@@ -231,6 +236,7 @@ namespace Logica
                 }
                 else
                 {
+                    ResultadoRetorno.MayorACero = false;
                     ban = 2;
                 }
             }
@@ -285,6 +291,7 @@ namespace Logica
         public Resultado ObtenerRaizSecante(Datos dato, MetodoAbierto metodo)
         {
             Resultado ResultadoRetorno = new Resultado();
+            ResultadoRetorno.MayorACero = false;
 
             int ban = 0;
 
@@ -300,6 +307,7 @@ namespace Logica
                 }
                 else
                 {
+                    ResultadoRetorno.MayorACero = true;
                     ban = 2;
                 }
             }
