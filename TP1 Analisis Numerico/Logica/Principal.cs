@@ -14,11 +14,11 @@ namespace Logica
             double resultadoo = new double();
 
             // Ejercicio 1
-            //double Euler = 2.71828182845;
-            //resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);
+            double Euler = 2.71828182845;
+            resultadoo = ((Math.Pow(Limite, 5)) * (Math.Pow(Euler, Limite)) - 10);
 
             // Ejercicio 2
-            // resultadoo = ((Math.Log(Limite)) + (1 / Limite) - 3);
+            //resultadoo = ((Math.Log(Limite)) + (1 / Limite) - 3);
 
             // Ejercicio 3
             /*double AuxArriba = (12.5) * (Limite + 2);
@@ -26,10 +26,10 @@ namespace Logica
             resultadoo = (AuxArriba / AuxAbajo) + 2;*/
 
             // Ejercicio 4
-            double Aux = (Math.Pow(Limite, 2)) - 4;
+            /*double Aux = (Math.Pow(Limite, 2)) - 4;
             if (Aux < 0)
             {Aux = Aux * -1;}
-            resultadoo = Aux + (2 * Limite);
+            resultadoo = Aux + (2 * Limite);*/
 
             // Ejercicio 5
             /*double Gfuncion = 5 - (Math.Sqrt(Limite));
@@ -123,6 +123,8 @@ namespace Logica
             }
             ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
 
+            ResultadoRetorno.VariableRetorno = Convert.ToDecimal(ResultadoRetorno.ErrorRelativo);
+
             ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
@@ -212,6 +214,8 @@ namespace Logica
             }
             ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
 
+            ResultadoRetorno.VariableRetorno = Convert.ToDecimal(ResultadoRetorno.ErrorRelativo);
+
             ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
             return ResultadoRetorno;
@@ -236,7 +240,7 @@ namespace Logica
                 }
                 else
                 {
-                    ResultadoRetorno.MayorACero = false;
+                    ResultadoRetorno.MayorACero = true;
                     ban = 2;
                 }
             }
@@ -252,8 +256,8 @@ namespace Logica
                 do
                 {
                     Cont += 1;
-                    Deriv = (ObtenerFuncion(metodo.Limite + 0.0001) - (ObtenerFuncion(metodo.Limite) / (0.0001)));
-                    Xr = (metodo.Limite - ObtenerFuncion(metodo.Limite)) / Deriv;
+                    Deriv = (ObtenerFuncion(metodo.Limite + 0.0001) - ObtenerFuncion(metodo.Limite)) / 0.0001;
+                    Xr = metodo.Limite - (ObtenerFuncion(metodo.Limite) / Deriv);
                     ResultadoRetorno.ErrorRelativo = (Xr - Ant) / Xr;
 
                     if (ResultadoRetorno.ErrorRelativo < 0)
@@ -282,6 +286,8 @@ namespace Logica
                 ResultadoRetorno.Iteraciones = Cont;
             }
             ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.VariableRetorno = Convert.ToDecimal(ResultadoRetorno.ErrorRelativo);
 
             ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 
@@ -353,6 +359,8 @@ namespace Logica
                 ResultadoRetorno.Iteraciones = Cont;
             }
             ResultadoRetorno.ErrorRelativo = Math.Round(ResultadoRetorno.ErrorRelativo, 6);
+
+            ResultadoRetorno.VariableRetorno = Convert.ToDecimal(ResultadoRetorno.ErrorRelativo);
 
             ResultadoRetorno.Raiz = Math.Round(ResultadoRetorno.Raiz, 6);
 

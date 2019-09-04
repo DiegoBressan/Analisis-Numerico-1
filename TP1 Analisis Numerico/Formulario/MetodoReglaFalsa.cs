@@ -53,7 +53,7 @@ namespace Formulario
                     label11.Visible = true;
                     label12.Visible = true;
                     label10.Text = Convert.ToString(NuevoResultado.Iteraciones);
-                    label11.Text = Convert.ToString(NuevoResultado.ErrorRelativo);
+                    label11.Text = Convert.ToString(NuevoResultado.VariableRetorno);
                     label12.Text = Convert.ToString(NuevoResultado.Raiz);
                     if (NuevoResultado.MayorACero == true)
                     {

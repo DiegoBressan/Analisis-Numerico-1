@@ -12,6 +12,7 @@ namespace Logica
         public double Raiz { get; set; }
         public double ErrorRelativo { get; set; }
         public bool MayorACero { get; set; }
+        public decimal VariableRetorno { get; set; }
 
         public Resultado(int iter, double raiz, double error)
         {
